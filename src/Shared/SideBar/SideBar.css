@@ -1,0 +1,7 @@
+.sidebar {
+    background-image: linear-gradient(45deg, rgb(36, 1, 75), rgb(42, 39, 48), rgb(37, 30, 49), rgb(29, 3, 77));
+}
+
+.img_container {
+    border: 5px solid rgb(3, 43, 17);
+}
