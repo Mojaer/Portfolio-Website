@@ -1,0 +1,6 @@
+.Home {
+    background-image: url('../../assets/Backgrounds/bg-home.jpg'), url('../../assets/Backgrounds/bg-home-over.png');
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+}

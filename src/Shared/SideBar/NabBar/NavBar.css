@@ -1,16 +1,17 @@
 .navbar>li {
     background-image: linear-gradient(to right, rgb(9, 81, 109), rgb(9, 97, 100), rgb(40, 8, 99));
     border-radius: 0 100px 100px 0;
-    transition-property: margin-left;
+    transition-property: margin-left, transform;
     transition-duration: .6s;
 }
 
 li:has(> a.active) {
     background-image: linear-gradient(to right, rgb(89, 189, 228), rgb(61, 179, 153), rgb(85, 34, 180));
-    margin-left: -1rem;
+    margin-left: -0.7rem;
+    transform: scale(1.05);
 }
 
 .active {
-    color: rgb(73, 8, 8);
+    color: rgb(139, 30, 11);
     font-weight: 900;
 }

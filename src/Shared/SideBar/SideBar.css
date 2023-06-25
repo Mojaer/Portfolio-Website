@@ -1,7 +1,13 @@
 .sidebar {
-    background-image: linear-gradient(45deg, rgb(36, 1, 75), rgb(42, 39, 48), rgb(37, 30, 49), rgb(29, 3, 77));
+    background-image: linear-gradient(45deg, rgb(36, 1, 75), rgb(42, 39, 48), rgb(37, 30, 49), rgb(29, 3, 77)), url('../../assets/Backgrounds/background.jpg');
+    border-left: 1px solid wheat;
+    background-position: left;
+    background-size: auto;
+    background-blend-mode: color-burn;
+    background-repeat: no-repeat;
 }
 
 .img_container {
     border: 5px solid rgb(3, 43, 17);
+    box-shadow: .5px 1px 3px rgb(248, 251, 252);
 }
