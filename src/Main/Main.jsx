@@ -8,7 +8,9 @@ const Main = () => {
         <div>
             <section className="">
                 <SideBar></SideBar>
-                <Outlet ></Outlet>
+                <div className=' md:w-auto w-full  '>
+                    <Outlet ></Outlet>
+                </div>
             </section>
             <Footer></Footer>
 

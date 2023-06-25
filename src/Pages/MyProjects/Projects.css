@@ -1,0 +1,8 @@
+.projects {
+    background-image: url('../../assets/Backgrounds/bg-projects.jpg'), url('../../assets/Backgrounds/bg-home-ove2r.jpg');
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}

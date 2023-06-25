@@ -10,7 +10,7 @@ const Title = ({ title }) => {
                     1000, // wait 1s before replacing "Mice" with "Hamsters"
                 ]}
                 wrapper="span"
-                speed={300}
+                speed={200}
                 className='font-extrabold gradient-text black md:text-2xl'
                 repeat={Infinity}
             />
