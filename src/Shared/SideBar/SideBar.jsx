@@ -5,10 +5,10 @@ import NavBar from './NabBar/NavBar';
 
 const SideBar = () => {
     return (
-        <div className='flex md:block sidebar md:w-80 p-4 lg:w-96 w-full md:h-screen fixed top-0 md:right-0 bg-slate-200 mt-0'>
+        <section className='w-1/3 sidebar lg:w-96 z-30  p-4 md:h-screen fixed top-0 right-0 bg-slate-200 mt-0'>
             <div className='mx-4 md:mt-6 mb-6s '>
 
-                <div className='img_container md:w-2/3 w-1/5 bg-slate-200 relative overflow-hidden drop-shadow-2xl ms-3 rounded-full img-cir-bg'>
+                <div className='img_container md:w-2/3 w-1/5 bg-slate-200 relative overflow-hidden drop-shadow-2xl ms-3 rounded-full img-cir-bg floating'>
                     <img className='' src={image} alt="profile_pic" ></img>
                 </div>
                 <h1 className='uppercase lg:text-4xl md:text-2xl font-bold text-stone-300 mt-7 mb-3'>MoJaEr AHMED</h1>
@@ -30,7 +30,7 @@ const SideBar = () => {
                 />
             </div>
             <NavBar></NavBar>
-        </div>
+        </section>
     );
 };
 

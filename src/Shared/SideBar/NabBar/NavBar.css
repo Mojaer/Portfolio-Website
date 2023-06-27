@@ -5,9 +5,19 @@
     transition-duration: .6s;
 }
 
-li:has(> a.active) {
+.navbar>li:hover {
     background-image: linear-gradient(to right, rgb(89, 189, 228), rgb(61, 179, 153), rgb(85, 34, 180));
     margin-left: -0.7rem;
+    transform: scale(1.05);
+}
+
+.navbar>li>a:hover {
+    color: red;
+}
+
+li:has(> a.active) {
+    background-image: linear-gradient(to right, rgb(89, 189, 228), rgb(61, 179, 153), rgb(85, 34, 180));
+    margin-left: -0.3rem;
     transform: scale(1.05);
 }
 
