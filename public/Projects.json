@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "title": "Instrumental Imaginarium",
+    "image":"/Website/imaginari1.png",
+    "image2":"/Website/imaginary2.png",
+    "subtitle": "(Summer Camp Course Website)",
+    "shortDescription": " This is full stack website built on MERN. This website includes beautiful features",
+    "longDescription": "Long description 1",
+    "technologyUsed": ["HTML", "CSS", "JavaScript"],
+    "liveLink": "https://www.example.com/project1",
+    "serverCodeLink": "https://www.example.com/project1/server",
+    "clientCodeLink": "https://www.example.com/project1/client"
+  },
+  {
+    "id": 2,
+    "title": "Power Toy Land",
+    "image":"/Website/toy.png",
+    "image2":"/Website/toy.png",
+    "subtitle": "(Super Hero Toy Website )",
+    "shortDescription": "Short description 1",
+    "longDescription": "Long description 1",
+    "technologyUsed": ["HTML", "CSS", "JavaScript"],
+    "liveLink": "https://www.example.com/project1",
+    "serverCodeLink": "https://www.example.com/project1/server",
+    "clientCodeLink": "https://www.example.com/project1/client"
+  },
+  {
+    "id": 3,
+    "title": "Australian Cuisine",
+    "subtitle": "(Website of a Cuisine)",
+    "image":"/public/Website/Australian.png",
+    "image2":"/Website/toy.png",
+    "shortDescription": "Short description 1",
+    "longDescription": "Long description 1",
+    "technologyUsed": ["HTML", "CSS", "JavaScript"],
+    "liveLink": "https://www.example.com/project1",
+    "serverCodeLink": "https://www.example.com/project1/server",
+    "clientCodeLink": "https://www.example.com/project1/client"
+  }
+]

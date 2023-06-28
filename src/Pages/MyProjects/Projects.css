@@ -12,13 +12,22 @@
     scrollbar-width: none;
 }
 
+.scroll:hover {
+    transform: scale(1.05);
+    animation: none;
+    transition: transform .5s ease-in
+}
+
 .scroll::-webkit-scrollbar {
     display: none;
+
 }
 
 .floating {
     animation: float 6s ease-in-out infinite;
 }
+
+
 
 @keyframes float {
     0% {
