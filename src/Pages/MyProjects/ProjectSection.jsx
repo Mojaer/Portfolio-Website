@@ -9,15 +9,39 @@ const ProjectSection = ({ project }) => {
     const { title, subtitle, image, image2, shortDescription } = project
 
     useEffect(() => {
-        const autoScroll = setInterval(() => {
-            if (divRef.current) {
-                divRef.current.scrollTop += 1
-            }
-            // if (divRef.current.scrollTop === (divRef.current.scrollHeight - divRef.current.offsetHeight)) {
-            //     divRef.current.scrollTop = 0;
-            // }
-        }, 70)
-        return () => clearInterval(autoScroll);
+
+        const containerElement = divRef.current;
+        let scrollTimeout;
+
+        const handleHover = () => {
+            // Set a new scroll timeout with the desired delay
+            scrollTimeout = setInterval(() => {
+                if (containerElement) {
+                    containerElement.scrollTop += 1;
+                }
+            }, 15);
+        };
+
+        const removeHover = () => {
+            clearInterval(scrollTimeout);
+            // scrollTimeout = setInterval(() => {
+            //     if (containerElement.scrollHeight > 0) {
+            //         containerElement.scrollHeight -= 1
+            //         containerElement.scrollTop = containerElement.scrollHeight
+            //     }
+            // }, 15);
+        }
+
+        containerElement.addEventListener('mouseenter', handleHover);
+        containerElement.addEventListener('mouseleave', removeHover);
+
+        // Clean up the event listener when the component unmounts
+        return () => {
+            containerElement.removeEventListener('mouseenter', handleHover);
+            containerElement.removeEventListener('mouseleave', removeHover);
+            clearTimeout(scrollTimeout);
+        };
+
     }, []);
     return (
         <div>
