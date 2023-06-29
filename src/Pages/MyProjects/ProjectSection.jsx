@@ -13,9 +13,9 @@ const ProjectSection = ({ project }) => {
             if (divRef.current) {
                 divRef.current.scrollTop += 1
             }
-            if (divRef.current.scrollTop === (divRef.current.scrollHeight - divRef.current.offsetHeight)) {
-                divRef.current.scrollTop = 0;
-            }
+            // if (divRef.current.scrollTop === (divRef.current.scrollHeight - divRef.current.offsetHeight)) {
+            //     divRef.current.scrollTop = 0;
+            // }
         }, 70)
         return () => clearInterval(autoScroll);
     }, []);

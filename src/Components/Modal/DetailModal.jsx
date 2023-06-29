@@ -41,8 +41,7 @@ const DetailModal = ({ open, handleOpen }) => {
                             <div>
                                 <button
                                     onClick={handleOpen}
-                                    className="mr-1 btn btn-primary"
-                                >
+                                    className="mr-1 btn btn-primary">
                                     Back
                                 </button>
                             </div>
