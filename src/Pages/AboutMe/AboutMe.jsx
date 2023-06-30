@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Title from "../../Components/Title/Title";
-import { ImAttachment } from 'react-icons/im';
+import { ImAttachment, } from 'react-icons/im';
+import { FaGithub } from 'react-icons/fa';
 
 
 
@@ -19,13 +20,11 @@ const AboutMe = () => {
                     <div className="text-left my-10 text-red-100 font-extrabold">
                         <a href='https://drive.google.com/file/d/1oXg_r78x_galcprnZ7toIDfbICVgt7Ps/view?usp=sharing' target="_blank" className="bg-transparent hover:bg-black  py-2 px-4 border border-gray-600 rounded-lg shadow-md hover:shadow-sm shadow-green-300" rel="noreferrer"><ImAttachment className="inline "> </ImAttachment> My Resume</a>
                         <Link className="bg-transparent hover:bg-black ms-3 py-2 px-4 border border-gray-600 rounded-lg shadow-md hover:shadow-sm shadow-green-300">Hire Me</Link>
+                        <a href="https://github.com/Mojaer?tab=repositories" target="_blank" className="bg-transparent hover:bg-black ms-3 py-2 px-4 border border-gray-600 rounded-lg shadow-md hover:shadow-sm shadow-green-300" rel="noreferrer flex"><FaGithub className="inline "></FaGithub> GitHub</a>
 
                     </div>
                 </div>
-
             </article>
-
-
         </section>
     );
 };

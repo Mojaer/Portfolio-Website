@@ -5,9 +5,7 @@ import { useEffect, useState } from "react";
 
 
 const MyProjects = () => {
-    const [projects, setProject] = useState([])
-
-
+    const [projects, setProject] = useState(null)
 
     useEffect(() => {
 
@@ -18,6 +16,12 @@ const MyProjects = () => {
             })
 
     }, [])
+
+    if (!projects) {
+        return <>
+            <section className="projects py-10 h-screen text-center lg:me-96 p-6"></section>
+        </>
+    }
 
     console.log(projects)
     return (
