@@ -23,7 +23,7 @@ const MyProjects = () => {
         </>
     }
 
-    console.log(projects)
+    // console.log(projects)
     return (
         <section className="projects py-10 text-center lg:me-96 p-6 ">
             <Title title={'MY PROJECTS'}></Title>

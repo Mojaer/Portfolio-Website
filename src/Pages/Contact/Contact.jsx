@@ -2,17 +2,32 @@ import Title from "../../Components/Title/Title";
 import facebook from '../../assets/social media/icons8-facebook-144.png'
 import whatsapp from '../../assets/social media/icons8-whatsapp-144.png'
 import linkedin from '../../assets/social media/icons8-linkedin-144.png'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Contact = () => {
-
+    const notify = (message) => toast(message);
     const handleMessage = (event) => {
         event.preventDefault()
         const form = event.target
         const email = form.email.value
         const message = form.message.value
-        console.log(email, message)
+        // console.log(email, message)
+        const messages = {
+            email, message
+        }
+
+        fetch('http://localhost:5000/message', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(messages)
+        }).then(res => res.json())
+            .then(data => { notify(data.message) })
     }
+
     return (
         <section className="Home py-10 h-screen text-center md:me-80 lg:me-96 p-6 ">
             <Title title={'CONTACT ME'}></Title>
@@ -43,8 +58,19 @@ const Contact = () => {
                     </div>
                     <input className="rounded-xl w-2/12 text-lg font-bold btn md:p-3 bg-gradient-to-r from-indigo-800 via-sky-950 to-blue-700  shadow drop-shadow-md hover:shadow-lg shadow-white" type="submit" value='send' />
                 </form>
-
             </div>
+            <ToastContainer
+                position="top-left"
+                autoClose={1000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="colored"
+            />
         </section>
     );
 };

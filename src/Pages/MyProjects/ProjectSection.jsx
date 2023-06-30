@@ -47,7 +47,7 @@ const ProjectSection = ({ project }) => {
         <div>
             {/* details about the projects */}
             <div className="ms-auto">
-                <DetailModal open={open} handleOpen={handleOpen}></DetailModal>
+                <DetailModal open={open} handleOpen={handleOpen} project={project}></DetailModal>
             </div>
 
             <div className="flex lg:h-[35rem] md:h-[25rem] h-[17rem] w-full ">

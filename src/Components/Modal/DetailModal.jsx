@@ -4,21 +4,21 @@ import { FaCcStripe, FaReact } from "react-icons/fa";
 import { SiDaisyui, SiExpress, SiFirebase, SiMongodb, SiReactrouter, SiTailwindcss, SiVercel } from "react-icons/si";
 import { DiNodejs } from "react-icons/di";
 
-const DetailModal = ({ open, handleOpen }) => {
+const DetailModal = ({ open, handleOpen, project }) => {
+
+    // console.log(project)
 
     return (
         <Fragment>
             <Dialog open={open} className="bg-none" handler={handleOpen}>
-                <div className=" h-[40rem] bg-transparent mt-10">
+                <div className=" h-[40rem] w-full bg-transparent mt-10">
                     <div className="bg-white w-11/12 mx-auto p-10 rounded-xl">
-                        <h1 className="my-2 text-center font-semibold text-2xl"> Its a simple dialog.</h1>
+                        <h1 className="my-2 text-center font-semibold text-2xl"> {project.title}</h1>
+                        <h1 className="my-2 text-center font-semibold text-xl"> {project.subtitle}</h1>
                         <hr className="my-4" />
                         <div className="my-2" >
-                            <h3 className="my-4 text-lg">
-                                The key to more success is to have a lot of pillows. Put it this way, it took me
-                                twenty five years to get these plants, twenty five years of blood sweat and tears, and
-                                I&apos;m never giving up, I&apos;m just getting started. I&apos;m up to something. Fan
-                                luv.
+                            <h3 className="my-4  text-lg">
+                                {project.longDescription}
                             </h3>
                             <hr className="my-4 " />
                             <div className="my-8">

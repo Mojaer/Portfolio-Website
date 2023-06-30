@@ -10,29 +10,29 @@ import react from '../../assets/Logo/icons8-react-native-128.png'
 import js from '../../assets/Logo/icons8-javascript-144.png'
 import vs from '../../assets/Logo/icons8-visual-studio-code-2019-144.png'
 import express from '../../assets/Logo/icons8-express-js-160.png'
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 
 
 const MySkills = () => {
-    const [state, setState] = useState(0);
+    // const [state, setState] = useState(0);
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setState(prevCounter => {
-                const updatedCounter = prevCounter + 1;
-                if (updatedCounter === 12) {
-                    clearInterval(interval);
-                }
-                return updatedCounter;
-            });
-        }, 100); // Interval of 1000 milliseconds (1 second)
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         setState(prevCounter => {
+    //             const updatedCounter = prevCounter + 1;
+    //             if (updatedCounter === 12) {
+    //                 clearInterval(interval);
+    //             }
+    //             return updatedCounter;
+    //         });
+    //     }, 100); // Interval of 1000 milliseconds (1 second)
 
-        return () => {
-            clearInterval(interval);
-        };
-    }, []);
+    //     return () => {
+    //         clearInterval(interval);
+    //     };
+    // }, []);
 
-    console.log(state)
+    // console.log(state)
     return (
         <section className="skills py-10 text-center md:me-80 lg:me-96 p-6">
             <Title title={'MY SKILLS'}></Title>
