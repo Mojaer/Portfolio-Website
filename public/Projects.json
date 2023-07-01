@@ -6,11 +6,11 @@
     "image2":"/Website/imaginary2.png",
     "subtitle": "(Summer Camp Course Website)",
     "shortDescription": " This is full stack website built on MERN. This website includes beautiful features",
-    "longDescription": "Long description 1",
-    "technologyUsed": ["HTML", "CSS", "JavaScript"],
-    "liveLink": "https://www.example.com/project1",
-    "serverCodeLink": "https://www.example.com/project1/server",
-    "clientCodeLink": "https://www.example.com/project1/client"
+    "longDescription": "The website provides musical instrumental training for Admins, Instructors, and Students. Admins have the role of approving courses, while Instructors can add courses. This collaboration ensures a diverse selection of courses for students to explore and benefit from. Students have the ability to browse through the available courses, make purchases using Stripe, and are unable to select courses that are already full. The platform focuses on maintaining quality and fostering a dynamic community of music enthusiasts dedicated to their musical education and growth.",
+    "technologyUsed": ["React.js", "Firebase Authentication", "Tailwind CSS", "DaisyUI", "Stripe.js", "Express.js", "MongoDB", "Vercel"],
+    "liveLink": "https://instrumental-imaginarium.web.app",
+    "serverCodeLink": "https://github.com/Mojaer/instrumental_imaginarium_Server_side",
+    "clientCodeLink": "https://github.com/Mojaer/instrumental_imaginarium_Musical_Course_Website"
   },
   {
     "id": 2,
@@ -18,24 +18,24 @@
     "image":"/Website/toy.png",
     "image2":"/Website/toy.png",
     "subtitle": "(Super Hero Toy Website )",
-    "shortDescription": "Short description 1",
-    "longDescription": "Long description 1",
-    "technologyUsed": ["HTML", "CSS", "JavaScript"],
-    "liveLink": "https://www.example.com/project1",
-    "serverCodeLink": "https://www.example.com/project1/server",
-    "clientCodeLink": "https://www.example.com/project1/client"
+    "shortDescription": "The toy shop website is a full-stack platform featuring a wide range of superhero-related toys.",
+    "longDescription": "The toy shop website specializes in a wide range of superhero-related toys, including superhero guns and costume masks. It is a single-page application (SPA) that employs MongoDB Express as the backend. Firebase is used for authentication, providing the option for Google login. Visitors can freely explore the home, browse all available toys, and access the blog without authentication. However, to view toy details, users need to log in. Authenticated users can add, edit, and delete their toys, offering the flexibility to update any toy as desired.",
+    "technologyUsed":["React.js", "Firebase Authentication", "Tailwind CSS", "DaisyUI", "Stripe.js", "Express.js", "MongoDB", "Vercel"],
+    "liveLink": "https://power-toy-land.web.app",
+    "serverCodeLink": "https://github.com/Mojaer/Power-Toy-Land-Server",
+    "clientCodeLink": "https://github.com/Mojaer/Power-Toy-Land-Website-client"
   },
   {
     "id": 3,
     "title": "Australian Cuisine",
     "subtitle": "(Website of a Cuisine)",
-    "image":"/public/Website/Australian.png",
+    "image":"/Website/Australian.png",
     "image2":"/Website/toy.png",
-    "shortDescription": "Short description 1",
-    "longDescription": "Long description 1",
-    "technologyUsed": ["HTML", "CSS", "JavaScript"],
-    "liveLink": "https://www.example.com/project1",
-    "serverCodeLink": "https://www.example.com/project1/server",
-    "clientCodeLink": "https://www.example.com/project1/client"
+    "shortDescription": "The Australian Cuisine website features Australian food, renowned chefs, customer feedback, cooking training, . This is a full stack website",
+    "longDescription": "The Australian Cuisine website focuses on showcasing Australian food and its rich culinary heritage. The website features a banner highlighting the name of the cuisine and introduces the best chefs and their recipes from renowned restaurants. Additionally, it includes sections for customer feedback and a cooking training center. The recipe section provides detailed information about each chef and their signature dishes, allowing users to save their favorite recipes. The website ensures security by implementing Firebase authentication for login and registration. It utilizes lazy loading for efficient image loading and incorporates spinners to indicate data loading. The blog section offers insights into React-related topics, while the website's design relies on the Bootstrap framework for creating various components. Private routes are employed to protect sensitive components.",
+    "technologyUsed": ["React.js", "Firebase Authentication", "Bootstrap", "React-to-Pdf", "Express.js", "Vercel"],
+    "liveLink": "https://australian-cuisine.web.app",
+    "serverCodeLink": "https://github.com/Mojaer/Australian_Cuisine_Website_Server",
+    "clientCodeLink": "https://github.com/Mojaer/Australian_Cuisine_Chef_Website"
   }
 ]

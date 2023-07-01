@@ -18,7 +18,7 @@ const Contact = () => {
             email, message
         }
 
-        fetch('http://localhost:5000/message', {
+        fetch('https://backend-flax-three.vercel.app/message', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -33,7 +33,9 @@ const Contact = () => {
             <Title title={'CONTACT ME'}></Title>
 
             <h1 className="text-2xl text-emerald-50 font-medium">Contact with me</h1>
-            <div className="my-6">
+            <div data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom"
+                data-aos-duration="500" className="my-6">
                 <button className="rounded-full w-10 h-10 font-bold bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700  shadow drop-shadow-md hover:shadow-lg shadow-white" >
                     <a href="https://www.linkedin.com/in/mojaer-ahmed-2793a41a9/" className="flex justify-center " target="_blank" rel="noreferrer"><img className="w-full" src={linkedin} alt="" /></a>
                 </button>
@@ -44,7 +46,10 @@ const Contact = () => {
                     <a href="https://www.facebook.com/mojaer.ahmed" className="flex justify-center " target="_blank" rel="noreferrer"><img className="w-full" src={facebook} alt="" /></a>
                 </button>
             </div>
-            <div className="mx-10 ">
+            <div data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom"
+                data-aos-duration="800"
+                data-aos-delay="300" className="mx-10 ">
                 <h1 className="text-2xl text-emerald-50 font-medium my-6 underline">tell me your Opinion</h1>
                 <form onSubmit={handleMessage} className="text-white">
                     <div className="md:col-span-5 mx-auto text-left w-2/3">

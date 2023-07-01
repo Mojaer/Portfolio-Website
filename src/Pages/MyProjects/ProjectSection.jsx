@@ -1,8 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import DetailModal from "../../Components/Modal/DetailModal";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+
 
 
 const ProjectSection = ({ project }) => {
+    AOS.init();
     const [open, setOpen] = useState(false);
     const divRef = useRef(null);
     const handleOpen = () => setOpen(!open);
@@ -51,16 +56,16 @@ const ProjectSection = ({ project }) => {
             </div>
 
             <div className="flex lg:h-[35rem] md:h-[25rem] h-[17rem] w-full ">
-                <div ref={divRef} className='h-5/6 w-1/2 overflow-auto scroll rounded-lg  p-1'>
+                <div data-aos="zoom-in-right" data-aos-duration="1000" ref={divRef} className='h-5/6 w-1/2 overflow-auto scroll rounded-lg  p-1'>
                     <img className="mb-2" src={image} alt="" />
                     <img src={image2} alt="" />
                 </div>
-                <article className="text-white w-1/2 px-4 pt-4 overflow-auto h-5/6 flex flex-col justify-center items-center ">
+                <article data-aos="zoom-out" data-aos-duration="500" className="text-white w-1/2 px-4 pt-4 overflow-auto h-5/6 flex flex-col justify-center items-center ">
                     <h2 className="text-md md:text-3xl font-semibold">{title}</h2>
                     <h3 className="text-sm md:text-2xl font-semibold">{subtitle}</h3>
                     <p className="my-4">{shortDescription}</p>
                     <div className="my-6">
-                        <button onClick={handleOpen} className="rounded-xl font-bold btn md:p-3 bg-gradient-to-r from-indigo-700 via-purple-600 to-red-500  shadow drop-shadow-md hover:shadow-lg shadow-white" >
+                        <button onClick={handleOpen} className="rounded-xl font-bold btn p-2 text-sm md:text-base md:p-3 bg-gradient-to-r from-indigo-700 via-purple-600 to-red-500  shadow drop-shadow-md hover:shadow-lg shadow-white" >
                             Project Details
                         </button>
                     </div>

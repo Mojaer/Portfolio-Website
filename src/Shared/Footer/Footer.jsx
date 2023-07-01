@@ -2,8 +2,8 @@
 
 const Footer = () => {
     return (
-        <div>
-            Footer
+        <div className="bg-black text-gray-300  py-5 flex items-center justify-center">
+            © 2023 Mojaer Ahmed. All Rights Reserved.
         </div>
     );
 };

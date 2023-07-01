@@ -14,7 +14,7 @@ const Title = ({ title }) => {
                 className='font-extrabold gradient-text black md:text-2xl'
                 repeat={Infinity}
             />
-            <hr className="my-4 mx-auto w-1/2 border-red-700 border-2" />
+            <hr data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500" className="my-4 mx-auto w-1/2 border-red-700 border-2" />
         </>
     );
 };

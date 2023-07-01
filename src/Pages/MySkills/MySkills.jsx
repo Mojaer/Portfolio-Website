@@ -10,10 +10,14 @@ import react from '../../assets/Logo/icons8-react-native-128.png'
 import js from '../../assets/Logo/icons8-javascript-144.png'
 import vs from '../../assets/Logo/icons8-visual-studio-code-2019-144.png'
 import express from '../../assets/Logo/icons8-express-js-160.png'
-// import { useState, useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+
 
 
 const MySkills = () => {
+    AOS.init();
     // const [state, setState] = useState(0);
 
     // useEffect(() => {
@@ -34,10 +38,13 @@ const MySkills = () => {
 
     // console.log(state)
     return (
-        <section className="skills py-10 text-center md:me-80 lg:me-96 p-6">
+        <section className="skills py-10 text-center md:me-2 lg:me-96 p-6">
             <Title title={'MY SKILLS'}></Title>
 
-            <article className="my-10  flex w-full justify-around">
+            <article data-aos="fade-right"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="800" className="my-10  flex w-full justify-around">
                 <div className="flex items-center w-5/12">
                     <div className="w-16"><img className="w-full" src={html} alt="" /></div>
                     <div className="w-5/6 mx-auto bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
@@ -45,7 +52,10 @@ const MySkills = () => {
                         <p className="text-white text-left  ">Html</p>
                     </div>
                 </div>
-                <div className="flex items-center w-5/12">
+                <div data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="800" className="flex items-center w-5/12">
                     <div className="w-16"><img className="w-full" src={css} alt="" /></div>
                     <div className="w-5/6 mx-auto bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                         <div className="bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 h-2.5 rounded-full w-9/12 css_progress"></div>
@@ -55,14 +65,20 @@ const MySkills = () => {
             </article>
 
             <article className="my-10  flex w-full justify-around">
-                <div className="flex items-center w-5/12">
+                <div data-aos="fade-right"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="800" className="flex items-center w-5/12">
                     <div className="w-16"><img className="w-full" src={bootstrap} alt="" /></div>
                     <div className="w-5/6 mx-auto bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                         <div className="bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 h-2.5 rounded-full w-10/12 bootstrap_progress"></div>
                         <p className="text-white text-left  ">Bootstrap</p>
                     </div>
                 </div>
-                <div className="flex items-center w-5/12">
+                <div data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="800" className="flex items-center w-5/12">
                     <div className="w-16"><img className="w-full" src={tailwind} alt="" /></div>
                     <div className="w-5/6 mx-auto bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                         <div className="bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 h-2.5 rounded-full w-10/12 tailwind_progress"></div>
@@ -72,14 +88,20 @@ const MySkills = () => {
             </article>
 
             <article className="my-10  flex w-full justify-around">
-                <div className="flex items-center w-5/12">
+                <div data-aos="fade-right"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="800" className="flex items-center w-5/12">
                     <div className="w-16"><img className="w-full" src={react} alt="" /></div>
                     <div className="w-5/6 mx-auto bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                         <div className="bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 h-2.5 rounded-full w-8/12 react_progress"></div>
                         <p className="text-white text-left  ">React</p>
                     </div>
                 </div>
-                <div className="flex items-center w-5/12">
+                <div data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="800" className="flex items-center w-5/12">
                     <div className="w-16"><img className="w-full" src={mongoDb} alt="" /></div>
                     <div className="w-5/6 mx-auto bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                         <div className="bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 h-2.5 rounded-full w-7/12 mongodb_progress"></div>
@@ -88,14 +110,20 @@ const MySkills = () => {
                 </div>
             </article>
             <article className="my-10  flex w-full justify-around">
-                <div className="flex items-center w-5/12">
+                <div data-aos="fade-right"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="800" className="flex items-center w-5/12">
                     <div className="w-16"><img className="w-full" src={GitHub} alt="" /></div>
                     <div className="w-5/6 mx-auto bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                         <div className="bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 h-2.5 rounded-full w-9/12 github_progress"></div>
                         <p className="text-white text-left  ">Github</p>
                     </div>
                 </div>
-                <div className="flex items-center w-5/12">
+                <div data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="800" className="flex items-center w-5/12">
                     <div className="w-16"><img className="w-full" src={js} alt="" /></div>
                     <div className="w-5/6 mx-auto bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                         <div className="bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 h-2.5 rounded-full w-7/12 js_progress"></div>
@@ -104,14 +132,20 @@ const MySkills = () => {
                 </div>
             </article>
             <article className="my-10  flex w-full justify-around">
-                <div className="flex items-center w-5/12">
+                <div data-aos="fade-right"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="800" className="flex items-center w-5/12">
                     <div className="w-16"><img className="w-full" src={vs} alt="" /></div>
                     <div className="w-5/6 mx-auto bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                         <div className="bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 h-2.5 rounded-full w-9/12 node_progress"></div>
                         <p className="text-white text-left  ">VS code</p>
                     </div>
                 </div>
-                <div className="flex items-center w-5/12">
+                <div data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="800" className="flex items-center w-5/12">
                     <div className="w-16"><img className="w-full" src={express} alt="" /></div>
                     <div className="w-5/6 mx-auto bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                         <div className="bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 h-2.5 rounded-full w-7/12 express_progress"></div>
